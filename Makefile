@@ -1,4 +1,4 @@
 
 
 all:
-	gcc -o test.out ./test.c
+	gcc -Og -g -o test.out ./test.c

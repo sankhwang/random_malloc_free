@@ -71,12 +71,14 @@ int main(int argc, char*argv[])
 		}
 	}
 
-	printf("%x %x , sub=%d\n", points[1],points[998], points[1]-points[998]);
+	//printf("%x %x , sub=%d\n", points[1],points[998], points[1]-points[998]);
+	printf("sub=%d\n", points[1]-points[998]);
 	for (k =0; k < n;k++) 
 	{
 		if ( points[k] != NULL  ) {
 			//if ( k == 661 || k == 617 )
-				printf("sub[%d]=%d,  ptr=%p, size=%d\n", k, points[k] - points[998], points[k], malloc_lens[k] );
+			//printf("sub[%d]=%d,  ptr=%p, size=%d\n", k, points[k] - points[998], points[k], malloc_lens[k] );
+			printf("sub[%d]=%d,  size=%d\n", k, points[k] - points[998], malloc_lens[k] );
 		}
 	}
 
